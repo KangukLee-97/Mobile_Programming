@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent">
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="로그인" android:layout_weight="1" android:id="@+id/btnLogin"/>
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="인적사항" android:layout_weight="1" android:id="@+id/btnInfo"/>
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="학점" android:layout_weight="1" android:id="@+id/btnGrade"/>
+</LinearLayout>
+
+
+    <FrameLayout android:layout_height="match_parent" android:layout_width="match_parent">
+
+
+    <LinearLayout android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/layoutLogin" android:visibility="visible" android:padding="10dp" android:background="@color/bg_register" android:layout_gravity="center">
+
+
+    <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="center" android:paddingRight="20dp" android:paddingLeft="20dp">
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:padding="10dp" android:background="@color/input_register_bg" android:textColorHint="@color/input_register_hint" android:textColor="@color/input_register" android:inputType="textCapWords" android:hint="아이디를 입력하세요" android:layout_marginBottom="10dp"/>
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:padding="10dp" android:background="@color/input_register_bg" android:textColorHint="@color/input_register_hint" android:textColor="@color/input_register" android:inputType="textEmailAddress" android:hint="비밀번호를 입력하세요" android:layout_marginBottom="10dp"/>
+    <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="로그인" android:background="#ea4c88" android:textColor="@color/white" android:layout_marginTop="20dip"/>
+    <Button android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="회원가입" android:background="#ea4c88" android:textColor="@color/white" android:layout_marginTop="20dip"/>
+</LinearLayout>
+</LinearLayout>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/layoutInfo" android:visibility="invisible">
+
+
+    <ScrollView android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/scrollView" android:layout_marginTop="0dp" android:gravity="center" android:fillViewport="true">
+
+
+    <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/layout">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="match_parent" android:adjustViewBounds="true" android:src="@drawable/picture"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="이름: 홍길동" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="학과 : 소프트웨어학과" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="학번: 2018XXXXX" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="이수학점: 100" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="이수학점: 100" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="평균학점: 4.0" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="주소: xxxxxx" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="이메일: xxxxx@xxxxx" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="전화번호 : 010-xxxx-xxxx" android:layout_gravity="center_horizontal" android:textSize="20sp"/>
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/layoutGrade" android:visibility="invisible" android:background="@color/colorPrimary">
+
+
+    <TableLayout android:layout_height="fill_parent" android:layout_width="match_parent" android:stretchColumns="*">
+
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="1dp" android:background="#000000">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="과목" android:background="#777777" android:gravity="center_horizontal" android:textSize="20sp" android:layout_marginRight="1dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="점수" android:background="#777777" android:gravity="center_horizontal" android:textSize="20sp" android:layout_marginRight="1dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="학점" android:background="#777777" android:gravity="center_horizontal" android:textSize="20sp"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="1dp" android:background="#000000">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="소프트웨어공학" android:background="#ffffff" android:gravity="center_horizontal" android:textSize="17sp" android:layout_marginRight="1dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="B+" android:background="#ffffff" android:gravity="center_horizontal" android:textSize="17sp" android:layout_marginRight="1dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="3" android:background="#ffffff" android:gravity="center_horizontal" android:textSize="17sp"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="1dp" android:background="#000000">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="졸업작품" android:background="#ffffff" android:gravity="center_horizontal" android:textSize="17sp" android:layout_marginRight="1dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="A+" android:background="#ffffff" android:gravity="center_horizontal" android:textSize="17sp" android:layout_marginRight="1dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="1" android:background="#ffffff" android:gravity="center_horizontal" android:textSize="17sp"/>
+
+</TableRow>
+
+
+    <TableRow android:layout_height="wrap_content" android:layout_width="match_parent" android:padding="1dp" android:background="#000000">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="모바일프로그래밍" android:background="#ffffff" android:gravity="center_horizontal" android:textSize="17sp" android:layout_marginRight="1dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="A" android:background="#ffffff" android:gravity="center_horizontal" android:textSize="17sp" android:layout_marginRight="1dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="3" android:background="#ffffff" android:gravity="center_horizontal" android:textSize="17sp"/>
+
+</TableRow>
+
+</TableLayout>
+
+</LinearLayout>
+
+</FrameLayout>
+
+</LinearLayout>
